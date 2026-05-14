@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #243047;
+    background: #f4f7fb;
+    line-height: 1.6;
+}
+
+.hero {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #dbeafe, #f5d0fe);
+}
+
+.hero-card {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 36px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 14px 35px rgba(37, 48, 71, 0.12);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #6366f1;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.tag {
+    margin: 0 0 8px;
+    color: #6366f1;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0 0 16px;
+    font-size: 42px;
+    color: #111827;
+}
+
+.lead {
+    margin: 0 0 24px;
+    max-width: 650px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    color: #ffffff;
+    background: #6366f1;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+main {
+    max-width: 960px;
+    margin: 36px auto;
+    padding: 0 20px;
+}
+
+.section {
+    margin-bottom: 28px;
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(37, 48, 71, 0.08);
+}
+
+h2 {
+    margin: 0 0 14px;
+    color: #111827;
+    font-size: 28px;
+}
+
+.visual-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.skill-card {
+    padding: 20px;
+    background: #eef2ff;
+    border-radius: 16px;
+}
+
+.skill-card h3 {
+    margin: 0 0 10px;
+    color: #4338ca;
+}
+
+.skill-card p {
+    margin: 0;
+}
+
+.text-link {
+    color: #4338ca;
+    font-weight: bold;
+}
+
+footer {
+    padding: 24px 20px;
+    text-align: center;
+    color: #6b7280;
+}
+
+@media (max-width: 700px) {
+    .hero-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .visual-block {
+        grid-template-columns: 1fr;
+    }
+}
